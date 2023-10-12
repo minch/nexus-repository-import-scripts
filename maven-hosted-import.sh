@@ -17,6 +17,7 @@ BASE_DIR=$(pwd)
 
 find $BASE_DIR -type f \
     -not -path "$BASE_DIR/mavenimport.sh" \
+    -not -path "$BASE_DIR/maven-hosted-import.sh" \
     -not -path '*/\.*' \
     -not -path '*/\^archetype\-catalog\.xml*' \
     -not -path '*/\^maven\-metadata\-local*\.xml' \
